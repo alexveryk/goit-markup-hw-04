@@ -294,7 +294,11 @@ a.current {
 }
 
 .features-container-image {
-  padding: 25px 100px;
+  /* padding: 25px 100px; */
+  display: flex;
+  height: 120px;
+  align-items: center;
+  justify-content: center;
   border-radius: 4px;
   background-color: var(--background-color-section-team);
 }
@@ -391,10 +395,8 @@ a.current {
 /********* CUSTOMERS *********/
 
 .customers-title {
-  padding-top: 94px;
   margin-bottom: 50px;
   letter-spacing: 0.03em;
-
   color: var(--main-color-page);
 }
 
@@ -402,13 +404,18 @@ a.current {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 30px;
-  padding-bottom: 94px;
+  gap: 30px;
+}
+
+.customers-list-item {
+  flex-basis: calc((100% - 150px) / 6);
 }
 
 .customers-list-link {
-  display: block;
-  padding: 16px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 92px;
   border: 1px solid var(--customers-text-color);
   color: var(--customers-text-color);
   border-radius: 4px;
@@ -469,6 +476,11 @@ a.current {
 .address-list-item:not(:last-child) {
   margin-bottom: 9px;
 }
+.footer-container {
+  display: flex;
+  gap: 70px;
+  align-items: baseline;
+}
 
 .footer-list {
   display: flex;
@@ -476,7 +488,7 @@ a.current {
   column-gap: 70px;
 }
 
-.footer-list-item > .join-title {
+.footer-column > .join-title {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
